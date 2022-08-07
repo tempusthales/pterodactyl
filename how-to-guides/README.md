@@ -7,11 +7,11 @@ Also Never substitute what the folks at Pterodactyl have written in  their guide
 
 Always double check with their documentation:
 
-Getting Started: https://pterodactyl.io/panel/1.0/getting_started.html#picking-a-server-os
-Webserver Configuration: https://pterodactyl.io/panel/1.0/webserver_configuration.html
-Creating SSL Certificates: https://pterodactyl.io/tutorials/creating_ssl_certificates.html
-Installing Wings: https://pterodactyl.io/wings/1.0/installing.html
+* Getting Started: https://pterodactyl.io/panel/1.0/getting_started.html#picking-a-server-os
+* Webserver Configuration: https://pterodactyl.io/panel/1.0/webserver_configuration.html
+* Creating SSL Certificates: https://pterodactyl.io/tutorials/creating_ssl_certificates.html
+* Installing Wings: https://pterodactyl.io/wings/1.0/installing.html
 
 # Installing and configuring Debian 11 for Pterodactyl
-https://github.com/tempusthales/pterodactyl/blob/main/how-to-guides/debian11_for_pterodactyl.md
+* https://github.com/tempusthales/pterodactyl/blob/main/how-to-guides/debian11_for_pterodactyl.md
 
