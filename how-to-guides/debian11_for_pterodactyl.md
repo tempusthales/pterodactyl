@@ -23,6 +23,7 @@ If you need help follow this guide: https://www.linuxtechi.com/how-to-install-de
 * `rm -rf /etc/apt/sources.list`
 
 * Copy the contents below into `sources.list`
+* * `sudo nano /etc/apt/sources.list`
 
 ```none
 deb http://deb.debian.org/debian/ bullseye main contrib non-free
@@ -40,7 +41,6 @@ deb http://ftp.debian.org/debian bullseye-backports main
 deb-src http://ftp.debian.org/debian bullseye-backports main
 ```
 
-* `sudo nano /etc/apt/sources.list`
 * Ctrl+X to save
 
 ## Updating 89_backports_default
