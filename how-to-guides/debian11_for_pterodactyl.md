@@ -119,17 +119,13 @@ Go to this link: `https://pterodactyl.io/panel/1.0/getting_started.html#dependen
 
   **Note**: *The options are self-explanatory, for the first two options choose “n” and for the next sequence of options press “y” for yes.*
 
-   
-
   ## Create Privileges User with Authentication
 
   * `sudo mysql` then you will be at a prompt that will read: `MariaDB [(none)]>` enter the following commands there:
     * `CREATE USER 'pterodactyl'@'127.0.0.1' IDENTIFIED BY 'yourPassword';` Note: change yourPassword to whatever password you want. 
       * For example: `CREATE USER 'pterodactyl'@'127.0.0.1' IDENTIFIED BY 'CWa4gDk5ZmzfXm';`
       * **Note**: Don't use that password, its an example. Generate your own password!
-    * `CREATE DATABASE panel; GRANT ALL PRIVILEGES ON panel.* TO 'pterodactyl'@'127.0.0.1' WITH GRANT OPTION; exit`
-  * Apply the new changes, execute: `FLUSH PRIVILEGES;`
-  * And to quit, type "exit": `EXIT`
+    * `CREATE DATABASE panel; GRANT ALL PRIVILEGES ON panel.* TO 'pterodactyl'@'127.0.0.1' WITH GRANT OPTION; FLUSH PRIVILEGES; exit;`
 
   ## Connect MariaDB Server
 
