@@ -98,6 +98,7 @@ Go to this link: `https://pterodactyl.io/panel/1.0/getting_started.html#dependen
 
 ### Add Redis official APT repository
 `curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg`
+
 `echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list`
 
 ### MariaDB repo setup script can be skipped on Ubuntu 22.04
