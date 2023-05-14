@@ -111,13 +111,13 @@ Go to this link: `https://pterodactyl.io/panel/1.0/getting_started.html#dependen
 `apt-add-repository universe`
 
 ### Install Dependencies
-`apt -y install php8.1 php8.1-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} mariadb-server nginx tar unzip git redis-server`
-`curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x`
-`sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg`
-`apt install redis`
-`apt -y install software-properties-common curl apt-transport-https ca-certificates gnupg`
-`apt -y install php8.1 php8.1-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} nginx tar unzip git`
-`systemctl enable --now redis-server`
+* `apt -y install php8.1 php8.1-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} mariadb-server nginx tar unzip git redis-server`
+* `curl -sSL https://packages.sury.org/php/README.txt | sudo bash -x`
+* `sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg`
+* `apt install redis`
+* `apt -y install software-properties-common curl apt-transport-https ca-certificates gnupg`
+* `apt -y install php8.1 php8.1-{common,cli,gd,mysql,mbstring,bcmath,xml,fpm,curl,zip} nginx tar unzip git`
+* `systemctl enable --now redis-server`
 
 ## Install and configure Maria DB on Debian
 
