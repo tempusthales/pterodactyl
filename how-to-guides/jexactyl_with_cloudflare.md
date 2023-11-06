@@ -67,8 +67,8 @@ sudo apt update && curl -fsSL https://download.webmin.com/jcameron-key.asc | sud
 
 #### Configure A Password-authenticated Administrative User
 ```bash
-CREATE USER 'admin'@'localhost' IDENTIFIED BY 'dumb4ss';
-GRANT ALL PRIVILEGES ON *.* TO 'mhadmin'@'localhost';
+CREATE USER 'admin'@'127.0.0.1' IDENTIFIED BY 'dumb4ss';
+GRANT ALL PRIVILEGES ON *.* TO 'admin'@'127.0.0.1';
 FLUSH PRIVILEGES;
 EXIT;
 ```
