@@ -103,10 +103,11 @@ EXIT;
 `php artisan key:generate --force`
 
 #### Configure Panel Environment
-
-`php artisan p:environment:setup`
-`php artisan p:environment:database`
-`php artisan p:environment:mail # Not required to run the Panel.`
+```
+php artisan p:environment:setup
+php artisan p:environment:database
+php artisan p:environment:mail # Not required to run the Panel.
+```
 
 #### Database Migration
 ###### The command below may take some time to run depending on your machine. Please DO NOT exit the process until it is completed!
