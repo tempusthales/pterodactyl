@@ -67,7 +67,7 @@ sudo apt update && curl -fsSL https://download.webmin.com/jcameron-key.asc | sud
 
 #### Configure A Password-authenticated Administrative User
 ```bash
-CREATE USER 'mhadmin'@'localhost' IDENTIFIED BY '8tatdiZyzdboSw';
+CREATE USER 'admin'@'localhost' IDENTIFIED BY 'dumb4ss';
 GRANT ALL PRIVILEGES ON *.* TO 'mhadmin'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
@@ -77,7 +77,7 @@ EXIT;
 
 #### Create jexactyl user and password and grant permissions
 ```bash
-CREATE USER 'jexactyl'@'127.0.0.1' IDENTIFIED BY '9XaUtK3AoszMsy';
+CREATE USER 'jexactyl'@'127.0.0.1' IDENTIFIED BY '1fuckedy0urM0m!';
 CREATE DATABASE panel;
 GRANT ALL PRIVILEGES ON panel.* TO 'jexactyl'@'127.0.0.1' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
