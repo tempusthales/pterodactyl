@@ -1,6 +1,6 @@
 # Setting up Jexactyl with Cloudflare Full Steps!!
 
-> I made this guide for my own help, since I am constantly optimizing process. However, not all the content in this guide was created solely by me. Portions of this guide were made from the original instructions in [docs.jexactyl.com](docs.jexactyl.com), [developers.cloudflare.com](https://developers.cloudflare.com) and [docs.pterodactyl.io](https://pterodactyl.io/project/introduction.html) in addition to countless hours of troubleshooting and experimentation. 
+> I made this guide for my own help, since I am constantly optimizing process. However, not all the content in this guide was created solely by me. Portions of this guide were made from the original instructions in [docs.jexactyl.com](docs.jexactyl.com), [developers.cloudflare.com](https://developers.cloudflare.com) and [docs.pterodactyl.io](https://pterodactyl.io/project/introduction.html) in addition to countless hours of troubleshooting and experimentation. --TT
 
 # OPTIONAL FIRST STEPS
 
