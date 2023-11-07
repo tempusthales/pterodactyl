@@ -26,7 +26,7 @@ sudo apt update && curl -fsSL https://download.webmin.com/jcameron-key.asc | sud
 
 ### Proceed to install Webmin
 
-`sudo apt update && sudo apt install webmin`
+`sudo apt update && sudo apt install webmin -y`
 
 **To log into webmin https://your_server:10000**
 
