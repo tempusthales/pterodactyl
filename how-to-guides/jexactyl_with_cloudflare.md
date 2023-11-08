@@ -174,7 +174,7 @@ WantedBy=multi-user.target
 4. Choose the Certificate Validity. The default is 15 years.
 5. Click the button on the bottom right of the page called CREATE.
 6. Keep the Key Format as PEM
-7. In the Private Key, copy the contents of your private key by pressing Click to copy then open VS Code (or whatever, just not notepad) paste the contents, then save it to <whatever_domain_com.pem>.
+7. In the Certificate, copy the contents of your private key by pressing Click to copy then open VS Code (or whatever, just not notepad) paste the contents, then save it to <whatever_domain_com.pem>.
 8. In the Private Key, copy the contents of your private key by pressing Click to copy then open VS Code (or whatever, just not notepad) paste the contents, then save it to <whatever_domain_com_key.pem>.
 9. Upload the files via SSH to your server and put them in /etc/ssl/certs.
 
