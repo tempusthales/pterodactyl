@@ -98,6 +98,11 @@ EXIT;
 
 `cp .env.example .env`
 
+#### Update for CORS policy
+`nano /var/www/jexactyl/.env` then add line: `APP_CORS_ALLOWED_ORIGINS=https://your.domain.com,https://your.domain.com:8443`
+
+`sudo reboot`
+
 #### Install Composer Packages
 
 `composer install --no-dev --optimize-autoloader`
