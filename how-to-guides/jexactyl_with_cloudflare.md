@@ -34,20 +34,26 @@ sudo apt update && curl -fsSL https://download.webmin.com/jcameron-key.asc | sud
 
 #### Dependency Installation
 
-`apt -y install software-properties-common curl apt-transport-https ca-certificates gnupg`
+`apt -y install software-properties-common curl apt-transport-https ca-certificates GnuPG lsb-release curl gpg`
 
-`LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php && add-apt-repository ppa:redislabs/redis -y`
+`LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php && add-apt-repository -y`
 
-#### The command below is not needed if you are using Ubuntu 22.04 or higher.
+#### Install REDIS
+`curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg`
+
+`echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list`
+
+`sudo apt-get update && sudo apt-get install redis`
+
+#### Install MariaDB
 `curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash`
 
-`apt update &&  apt -y install php8.1 php8.1-{cli,gd,mysql,pdo,mbstring,tokenizer,bcmath,xml,fpm,curl,zip} mariadb-server nginx tar unzip git redis-server` 
+`apt update && apt -y install php8.1 php8.1-{cli,gd,mysql,pdo,mbstring,tokenizer,bcmath,xml,fpm,curl,zip} mariadb-server nginx tar unzip git redis-server` 
 
 `curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer`
 
 #### Harden MariaDB Instance
 `sudo mysql_secure_installation`
-
 
 # Download Files
 
