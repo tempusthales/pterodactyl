@@ -1,6 +1,6 @@
 # Setting up Jexactyl with Cloudflare Full Steps!!
 
-> I made this guide for my own help, since I am constantly optimizing process. However, not all the content in this guide was created solely by me. Portions of this guide were made from the original instructions in [docs.jexactyl.com](docs.jexactyl.com), [developers.cloudflare.com](https://developers.cloudflare.com) and [docs.pterodactyl.io](https://pterodactyl.io/project/introduction.html) in addition to countless hours of troubleshooting and experimentation. --TT
+> I made this guide to help since I am constantly optimizing processes. However, I created only some of the content in this guide. Portions of this guide were made from the original instructions in [docs.jexactyl.com](docs.jexactyl.com), [developers.cloudflare.com](https://developers.cloudflare.com) and [docs.pterodactyl.io](https://pterodactyl.io/project/introduction.html) in addition to countless hours of troubleshooting and experimentation. --TT
 
 # OPTIONAL FIRST STEPS
 
@@ -14,7 +14,7 @@ The optimal server config is a VM with 4-8 cores, 128-256 GB of RAM, and 1 TB + 
 sudo apt update && curl -fsSL https://download.webmin.com/jcameron-key.asc | sudo gpg --dearmor -o /usr/share/keyrings/webmin.gpg
 ```
 
-**Next you will add this repository to your /etc/apt/sources.list file while referencing the newly converted file you just acquired in the previous step. Open the file in your preferred editor. Here, you’ll use nano:**
+**Next, you will add this repository to your /etc/apt/sources.list file while referencing the newly converted file you acquired in the previous step. Could you open the file in your preferred editor? Here, you’ll use nano:**
 
 `sudo nano /etc/apt/sources.list`
 
@@ -22,13 +22,13 @@ sudo apt update && curl -fsSL https://download.webmin.com/jcameron-key.asc | sud
 
 `deb [signed-by=/usr/share/keyrings/webmin.gpg] http://download.webmin.com/download/repository sarge contrib`
 
-**Save the file and exit the editor. If you had used nano to edit, you can exit by pressing CTRL+X, Y, then ENTER.****
+**Save the file and exit the editor. If you had used nano to edit, you can go by pressing CTRL+X, Y, then ENTER.****
 
 ### Proceed to install Webmin
 
 `sudo apt update && sudo apt install webmin -y`
 
-**To log into webmin https://your_server:10000**
+**To log into webmin: https://your_server:10000**
 
 # Game Server Manager Installation
 
