@@ -34,7 +34,7 @@ sudo apt update && curl -fsSL https://download.webmin.com/jcameron-key.asc | sud
 
 #### Dependency Installation
 
-`apt -y install software-properties-common curl apt-transport-https ca-certificates GnuPG lsb-release curl gpg`
+`apt -y install software-properties-common curl apt-transport-https ca-certificates GnuPG lsb-release gpg`
 
 `LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php && add-apt-repository -y`
 
