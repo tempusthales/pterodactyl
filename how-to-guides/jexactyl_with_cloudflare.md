@@ -298,6 +298,7 @@ To enable swap, open `/etc/default/grub` as a root user and find the line starti
 After that, run `sudo update-grub` followed by `sudo reboot` to restart the server and have swap enabled. Below is an example of what the line should look like, do not copy this line verbatim. It often has additional OS-specific parameters.
 
 `GRUB_CMDLINE_LINUX_DEFAULT="swapaccount=1"`
+`GRUB_CMDLINE_LINUX="systemd/unified_cgroup_hierarchy=1"`
 
 ### Installing Wings
 
